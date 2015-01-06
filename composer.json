@@ -1,0 +1,26 @@
+{
+  "name": "cmskit/wizard-simple-filemanager",
+  "type": "library",
+  "version": "0.5.0",
+  "description": "A cms-kit wizard to provide a simple file manager",
+  "license": "GPL",
+  "authors": [
+    {
+      "name": "Christoph Taubmann",
+      "email": "info@cms-kit.com"
+    }
+  ],
+  "homepage": "http://cms-kit.com",
+
+  "require": {
+    "php": ">=5.3.3"
+  },
+    "extra":{
+        "wizards":{
+            "VARCHAR": {
+                "description": "",
+                "embed": "wizard:simple_filemanager"
+            }
+        }
+    }
+}
