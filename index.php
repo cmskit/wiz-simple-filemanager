@@ -145,7 +145,8 @@ if (isset($_GET['action']))
 			// if the file already exists create a new name
 			for ($i=1; file_exists($fulldest); $i++)
 			{
-				$fileext = array_pop(explode('.',$origin));
+				$split = explode('.',$origin);
+				$fileext = array_pop($split);
 				$filename = substr($origin, 0, strlen($origin)-strlen($fileext)-1).'['.$i.'].'.$fileext;
 				$fulldest = $basepath . '/'. $actpath . '/' . $filename;
 			}
